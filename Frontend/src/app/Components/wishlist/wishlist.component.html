@@ -1,0 +1,38 @@
+<mat-toolbar color="primary" class="custom-toolbar">
+  <span>My Wishlist</span>
+  <span class="spacer"></span>
+  <nav>
+    <button (click)="onclickdash()" class="large-button">Dashboard</button>
+  </nav>
+</mat-toolbar>
+
+<!-- Background image -->
+<img src="https://t3.ftcdn.net/jpg/02/80/10/24/360_F_280102415_eQ4cQVzSkvklQgYyLJhRUei9UWiccKa7.jpg" 
+     class="background-image" 
+     alt="Background Image">
+
+<div class="wishlist-container">
+  <ng-container *ngIf="wishlistItems.length > 0; else noItems">
+    <mat-card *ngFor="let item of wishlistItems" class="wishlist-item">
+      <mat-card-header>
+        <mat-card-title >{{ item.name }}</mat-card-title>
+        <mat-card-subtitle>Calories: {{ item.caloric }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image *ngIf="item.image; else placeholderImg" [src]="item.image" alt="{{ item.name | titlecase }}">
+      <ng-template #placeholderImg>
+        <img mat-card-image src="assets/images/placeholder.png" alt="Image not available">
+      </ng-template>
+      <mat-card-actions>
+        <button mat-raised-button color="accent" (click)="removeItem(item.foodid)">Remove</button>
+      </mat-card-actions>
+    </mat-card>
+  </ng-container>
+
+  <ng-template #noItems>
+    <mat-card class="no-items-card">
+      <mat-card-content>
+        <p>No items in your wishlist.</p>
+      </mat-card-content>
+    </mat-card>
+  </ng-template>
+</div>

@@ -1,0 +1,186 @@
+/* Adjusting toolbar to a softer green for better aesthetics */
+.custom-toolbar {
+  background-color: #388e3c; /* Softer green */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure items are spaced out */
+  padding: 8px 16px; /* Adjust padding */
+  position: relative;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+/* Position the background image */
+.background-image {
+  position: fixed; /* Change to fixed to cover entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send it to the background */
+  object-fit: cover; /* Ensure the image covers the entire background */
+}
+
+/* Responsive styles for mobile view */
+@media screen and (max-width: 768px) {
+  .custom-toolbar {
+    padding: 8px 10px; /* Adjust padding for smaller screens */
+  }
+  .background-image {
+    object-fit: cover; /* Ensure the image still covers the background */
+  }
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Adding heading for wishlist */
+.wishlist-heading {
+  text-align: center;
+  font-size: 2.4em;
+  color: white;
+  margin: 24px 0;
+  font-weight: 700;
+  background: linear-gradient(45deg, #66bb6a, #2e7d32); /* Gradient for heading */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Stacking the cards in a grid layout */
+.wishlist-container {
+  position: relative; /* Make the container above the background */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 16px; /* Space between cards */
+  align-items: start; /* Align items at the start */
+  padding: 24px;
+  min-height: calc(100vh - 64px); /* Full height minus toolbar */
+}
+
+/* Styling for individual wishlist items */
+.wishlist-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  background: linear-gradient(135deg, #a5d6a7, #c8e6c9); /* Elegant gradient for cards */
+  z-index: 1; /* Ensure the card is above the background */
+}
+
+.wishlist-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Darker hover shadow for depth */
+}
+
+mat-card {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+mat-card-header {
+  /* Soft green background */
+  padding: 16px;
+  text-align: center; /* Center the text */
+}
+
+mat-card-title {
+  font-size: 1.6em; /* Increased size for elegance */
+  font-weight: bold;
+  color: rgb(41, 87, 27); /* Dark green */
+  background: rgb(41, 87, 27);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+mat-card-subtitle {
+  color: rgb(66, 75, 60);
+  text-align: center; /* Center the subtitle */
+  font-size: 1.1em; /* Increased size for better visibility */
+}
+
+img[mat-card-image] {
+  height: 180px; /* Increased height */
+  width: 210px; /* Increased width */
+  object-fit: cover; /* Ensures the image covers the set dimensions */
+  display: block;
+  margin: 0 auto; /* Centers the image horizontally */
+  border-radius: 0px; /* Optional: gives the image rounded corners */
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px; /* Reduced padding */
+  visibility: visible; /* Ensure the button is visible */
+  opacity: 1;
+  z-index: 10; /* Ensure it is above other elements */
+  position: relative;
+  margin-top: -30px; /* Move button up */
+}
+
+button[mat-raised-button] {
+  visibility: visible; /* Ensure button is visible */
+  opacity: 1;
+  background: linear-gradient(45deg, #81c784, #388e3c);
+  color: white;
+  z-index: 11; /* Ensuring the button is above other elements */
+  margin-left: 20px;
+}
+
+button[mat-raised-button]:hover {
+  background-color: #113d11;
+}
+
+/* Button Styling */
+.large-button {
+  background: linear-gradient(45deg, #81c784, #388e3c);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.large-button:hover {
+  background: linear-gradient(45deg, #388e3c, #81c784);
+  transform: translateY(-2px);
+}
+
+.no-items-card {
+  text-align: center;
+  padding: 32px;
+  background: linear-gradient(45deg, #ffffff, #f0f0f0); /* Elegant light gradient */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  margin-top: 32px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.no-items-card p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wishlist-item,
+.no-items-card {
+  animation: fadeIn 0.5s ease-out forwards;
+}

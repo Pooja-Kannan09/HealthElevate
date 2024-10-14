@@ -1,0 +1,30 @@
+<mat-toolbar class="custom-toolbar">
+  <span class="toolbar-title">Health Elevate</span>
+  <span class="spacer"></span>
+  <nav>
+    <button (click)="onHome()" class="btn">Home</button>
+  </nav>
+</mat-toolbar>
+<div class="login-container">
+  <img src="https://png.pngtree.com/thumb_back/fw800/background/20240802/pngtree-fresh-greens-for-organic-food-and-nutrition-design-image_16121594.jpg" class="background-image" alt="Background Image">
+  <mat-card class="glass-card">
+    <mat-card-title class="title">Login</mat-card-title>
+    <mat-card-content>
+      <form (ngSubmit)="login()">
+        <mat-form-field appearance="fill">
+          <mat-label>Username</mat-label>
+          <input  matInput [(ngModel)]="username" name="username" class="username" required>
+        </mat-form-field><br>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" [(ngModel)]="password" name="password" class="password" required>
+        </mat-form-field>
+
+        <div class="button-container">
+          <button mat-raised-button color="primary" type="submit" class="large-button">Login</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

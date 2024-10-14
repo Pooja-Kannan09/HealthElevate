@@ -1,0 +1,46 @@
+<mat-toolbar class="custom-toolbar">
+  <span class="toolbar-title">Health Elevate</span>
+  <span class="spacer"></span>
+  <nav>
+    <button (click)="onclickdash()" class="large-button">Dashboard</button>
+  </nav>
+</mat-toolbar>
+
+<div class="search-background">
+  <img src="https://t3.ftcdn.net/jpg/02/80/10/24/360_F_280102415_eQ4cQVzSkvklQgYyLJhRUei9UWiccKa7.jpg" class="background-image" alt="Background Image">
+
+  <div class="search-container glass-card">
+    <div class="card-header">
+      <h2 class="card-title">Get Nutrition by Food Name</h2>
+    </div>
+
+    <input 
+      [(ngModel)]="title" 
+      placeholder="Enter dish name" 
+      class="search-input" 
+      (input)="onInputChange()" 
+    />
+    <button (click)="searchNutrition()" class="large-button">Search</button>
+
+    <!-- Preloader -->
+    <div *ngIf="isLoading" class="preloader">
+      <mat-progress-spinner mode="indeterminate" diameter="20" class="spinner"></mat-progress-spinner>
+    </div>
+
+    <div *ngIf="!isLoading">
+      <div *ngIf="nutritionData && (nutritionData.calories || nutritionData.carbs || nutritionData.fat || nutritionData.protein); else noDataTemplate" class="nutrition-results">
+        <h3>Nutrition Results:</h3>
+        <p><strong>Calories:</strong> {{ nutritionData.calories?.value }} {{ nutritionData.calories?.unit }}</p>
+        <p><strong>Carbs:</strong> {{ nutritionData.carbs?.value }} {{ nutritionData.carbs?.unit }}</p>
+        <p><strong>Fat:</strong> {{ nutritionData.fat?.value }} {{ nutritionData.fat?.unit }}</p>
+        <p><strong>Protein:</strong> {{ nutritionData.protein?.value }} {{ nutritionData.protein?.unit }}</p>
+      </div>
+
+      <ng-template #noDataTemplate>
+        <div *ngIf="searchInitiated" class="nutrition-results">
+          <p>No data found for {{ title }}.</p>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

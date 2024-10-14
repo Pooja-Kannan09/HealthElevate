@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+/* Toolbar styling remains the same */
+.custom-toolbar {
+  background: linear-gradient(45deg, #4caf50, #81c784); /* Gradient background */
+  color: white;
+  height: 64px; /* Standard height for toolbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolbar-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.spacer {
+  flex: 1;
+}
+
+mat-toolbar nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+mat-toolbar nav a:hover {
+  color: #1c491e; /* Change color on hover */
+}
+
+/* Styling for the container and background image */
+.login-container {
+  position: relative; /* To position the background image properly */
+  height: 100vh; /* Full screen height */
+  display: flex; /* Center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  overflow: hidden; /* Prevent overflow from children */
+  padding: auto;
+  }
+
+/* Background Image */
+.background-image {
+  position: absolute; /* Position the image behind the content */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Use viewport width for full coverage */
+  height: 100vh; /* Use viewport height for full coverage */
+  object-fit: cover; /* Ensures the image covers the entire container */
+  z-index: -1; /* Places the image behind the content */
+}
+
+/* Glassmorphism Effect for the Login Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1); /* Very transparent for glass effect */
+  border-radius: 15px; /* Rounded corners */
+  backdrop-filter: blur(20px); /* Strong blur for a glassy look */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25); /* Soft shadow for depth */
+  padding: 40px; /* Inner padding for the card */
+  max-width: 5000px; /* Width of the card */
+  border: 1px solid rgba(48, 187, 141, 0.562); /* Subtle border for definition */
+  color: #fff; /* Light text color for contrast */
+}
+
+/* Title Styling */
+.title {
+  font-family: "Audiowide", sans-serif;
+  text-align: center; /* Center the title */
+  font-size: 32px; /* Larger title for better visibility */
+  font-weight: bold; /* Bold title */
+  margin-bottom: 20px; /* Space below the title */
+  background: linear-gradient(90deg, #202520, #0f3111); /* Gradient from dark green to light green */
+  -webkit-background-clip: text; /* Clip the background to text */
+  -webkit-text-fill-color: transparent; /* Make the text fill transparent to show gradient */
+  background-clip: text; /* Ensure the gradient is applied to the text */
+  padding: 20px;
+}
+
+
+/* Input Fields Styling */
+.mat-form-field {
+  padding: auto;
+  width: 100%; /* Full width of the parent container */
+  margin-bottom: 20px; /* Space between input fields */
+  align-items: center;
+  margin-left: 200px;
+}
+
+.username,.password{
+  width: 100%;
+}
+
+/* Input Focus State */
+.mat-input-element:focus {
+  border-color: #61c0a8; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+
+}
+
+/* Button Container */
+.button-container {
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center the button */
+  margin-top: 20px; /* Space above the button */
+}
+
+/* Button Styling */
+.large-button {
+  background: linear-gradient(45deg, #81c784, #388e3c); /* Light green to dark green gradient */
+  color: white; /* Text color */
+  font-weight: bold; /* Bold text */
+  border: none; /* Remove border */
+  padding: 12px 24px; /* Increase padding for a larger button */
+  font-size: 16px; /* Increase font size */
+  border-radius: 30px; /* Rounded button corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for the button */
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  width: 200px; /* Set button width */
+}
+
+/* Button Hover Effect */
+.large-button:hover {
+  background: linear-gradient(45deg, #388e3c, #81c784); /* Reverse gradient on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Button Styling */
+.btn{
+  background: linear-gradient(45deg, #81c784, #388e3c);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #388e3c, #81c784);
+  transform: translateY(-2px);
+}

@@ -1,0 +1,6 @@
+@NutritionDb_Approach_HostAddress = http://localhost:5002
+
+GET {{NutritionDb_Approach_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

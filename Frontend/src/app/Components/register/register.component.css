@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+/* Toolbar styling remains the same */
+.custom-toolbar {
+  background: linear-gradient(45deg, #4caf50, #81c784); /* Gradient background */
+  color: white;
+  height: 64px; /* Standard height for toolbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolbar-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.spacer {
+  flex: 1;
+}
+
+mat-toolbar nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+mat-toolbar nav a:hover {
+  color: #1c491e; /* Change color on hover */
+}
+/* Styling for the container and background image */
+.register-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: auto;
+}
+
+/* Background Image */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Glassmorphism Effect for the Register Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  padding: 40px;
+  max-width: 5000px;
+  border: 1px solid rgba(48, 187, 141, 0.562);
+  color: #fff;
+  align-items: center;
+}
+
+/* Title Styling */
+.title {
+  font-family: "Audiowide", sans-serif;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #202520, #0f3111);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding: 20px;
+}
+
+/* Input Fields Styling */
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  padding: auto;
+}
+
+.mat-form-field input {
+  width: 100%;
+}
+
+/* Button Styling */
+.large-button {
+  background: linear-gradient(45deg, #81c784, #388e3c);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.3s ease;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Button Hover Effect */
+.large-button:hover {
+  background: linear-gradient(45deg, #388e3c, #81c784);
+  transform: translateY(-2px);
+}
+/* Styling for the login link */
+.login-link-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .login-link-text {
+    color: black;
+    font-size: 14px;
+  }
+  
+  .login-link {
+    color: #81c784;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .snackbar-warning {
+    background-color: #ffcc00; /* Custom background color */
+    color: black; /* Text color */
+  }
+  /* Button Styling */
+.btn{
+  background: linear-gradient(45deg, #81c784, #388e3c);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #388e3c, #81c784);
+  transform: translateY(-2px);
+}

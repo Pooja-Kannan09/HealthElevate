@@ -1,0 +1,53 @@
+<mat-toolbar class="custom-toolbar">
+  <span class="toolbar-title">Health Elevate</span>
+  <span class="spacer"></span>
+  <nav>
+    <button (click)="onLogout()" class="btn">Logout</button>
+  </nav>
+</mat-toolbar>
+
+<div class="dashboard-container">
+  <img src="https://t3.ftcdn.net/jpg/02/80/10/24/360_F_280102415_eQ4cQVzSkvklQgYyLJhRUei9UWiccKa7.jpg" class="background-image" alt="Background Image">
+  
+  <div class="card-container">
+    <div class="card">
+      <mat-card class="glass-card hover-card">
+        <div class="card-title-container">
+          <mat-card-title class="card-title">List of Foods</mat-card-title>
+        </div>
+        <img src="https://img.freepik.com/premium-photo/green-vegetables-fruits-apple-kiwi-cucumber-mint-leaves-green-surface_380747-347.jpg?ga=GA1.1.943173784.1727884553&semt=ais_hybrid" alt="List of Foods" class="card-image">
+        <mat-card-content class="hidden-title">Explore a comprehensive list of nutritious foods to elevate your health.</mat-card-content>
+        <mat-card-content class="hidden-content">
+          <button (click)="navigateListofFoods()" class="large-button">Go here! <mat-icon>arrow_forward</mat-icon></button>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="card">
+      <mat-card class="glass-card hover-card">
+        <div class="card-title-container">
+          <mat-card-title class="card-title">Search Nutrient</mat-card-title>
+        </div>
+        <img src="https://img.freepik.com/free-photo/high-angle-deliciouss-foodstuff_23-2149224225.jpg?ga=GA1.1.943173784.1727884553&semt=ais_hybrid" alt="Search Nutrient" class="card-image">
+        <mat-card-content class="hidden-title">Find detailed nutrient information for various foods and ingredients.</mat-card-content>
+        <mat-card-content class="hidden-content">
+          <button (click)="navigateToSearchNutrition()" class="large-button">Go here! <mat-icon>arrow_forward</mat-icon></button>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="card">
+      <mat-card class="glass-card hover-card">
+        <div class="card-title-container">
+          <mat-card-title class="card-title">Wishlist/Favorites</mat-card-title>
+        </div>
+        <img src="https://img.freepik.com/free-photo/healthy-food-with-emojis_23-2151848669.jpg?ga=GA1.1.943173784.1727884553&semt=ais_hybrid" alt="Wishlist/Favorites" class="card-image">
+        <mat-card-content class="hidden-title">Keep track of your favorite foods and nutrients in one place.</mat-card-content>
+        <mat-card-content class="hidden-content">
+          <button (click)="navigateToWishlist()" class="large-button">Go here! <mat-icon>arrow_forward</mat-icon></button>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

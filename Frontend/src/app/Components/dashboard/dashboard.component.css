@@ -1,0 +1,287 @@
+/* Toolbar styling remains the same */
+.custom-toolbar {
+  background: linear-gradient(45deg, #4caf50, #81c784); /* Gradient background */
+  color: white;
+  height: 64px; /* Standard height for toolbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolbar-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.spacer {
+  flex: 1;
+}
+
+mat-toolbar nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+mat-toolbar nav a:hover {
+  color: #1c491e; /* Change color on hover */
+}
+
+/* Dashboard and card styling */
+.dashboard-container {
+  position: relative;
+  /*height: 100vh;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+
+}
+
+/* Card styling */
+.card {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  margin: 20px;
+  perspective: 1000px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(48, 187, 141, 0.562);
+}
+
+/* Card hover effect */
+.hover-card {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* Card image */
+.card-image {
+  width: 100%;
+  height: 150px; /* Adjust the height as needed */
+  object-fit: cover;
+  border-radius: 0 0 15px 15px; /* Rounded corners on the bottom */
+  margin-top: 50px;
+}
+
+/* Title container with gradient background */
+.card-title-container {
+  background: linear-gradient(45deg, #4caf50, #81c784);
+  width: 100%; /* Ensure it covers the entire card width */
+  position: absolute; /* Position it absolutely */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align to the left */
+  padding: 10px;
+  border-radius: 15px 15px 0 0; /* Rounded corners on the top */
+  text-align: center;
+  z-index: 1; /* Ensure it appears above the image */
+}
+
+
+/* Title styling */
+.card-title {
+  color: white; /* Text color */
+  margin: 0; /* Remove default margin */
+}
+
+/* Initially hide the title */
+.hidden-title {
+  visibility: visible; /* Keep title visible initially */
+  opacity: 1; /* Set opacity to 1 */
+  transition: opacity 0.3s ease; /* Transition for opacity */
+  margin-top: 30px;
+}
+
+/* Hide title on hover */
+.hover-card:hover .hidden-title {
+  visibility: hidden; /* Hide title on hover */
+  opacity: 0; /* Set opacity to 0 */
+}
+
+/* Button styling */
+.large-button {
+  background: linear-gradient(45deg, #81c784, #388e3c);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.3s ease;
+  width: 200px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.large-button:hover {
+  background: linear-gradient(45deg, #388e3c, #81c784);
+  transform: translateY(-2px);
+}
+/* Button Styling */
+.btn{
+  background: linear-gradient(45deg, #81c784, #388e3c);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #388e3c, #81c784);
+  transform: translateY(-2px);
+}
+.hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+/*Toolbar Responsiveness*/
+@media (max-width: 768px) {
+  .toolbar-title {
+    font-size: 20px;
+  }
+
+  mat-toolbar nav a {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .custom-toolbar {
+    height: 56px; /* Smaller height for mobile devices */
+  }
+}
+
+/*Dashboard and Card Container Responsiveness*/
+@media (max-width: 1024px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    height: auto;
+  }
+
+  .large-button {
+    width: 150px; /* Adjust button size */
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .large-button {
+    width: 140px; /* Further reduce button size */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* Full width for small screens */
+    height: auto;
+  }
+
+  .large-button {
+    font-size: 14px;
+    padding: 10px 20px;
+    width: 100%; /* Full-width button */
+  }
+}
+/*Background image responsiveness*/
+.background-image {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .background-image {
+    height: 100%; /* Adjust height for smaller screens */
+  }
+}
+
+/*Button Responsiveness*/
+@media (max-width: 768px) {
+  .large-button {
+    font-size: 14px;
+    padding: 10px 20px;
+    width: 180px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+
+/*Card Image Responsiveness*/
+@media (max-width: 768px) {
+  .card-image {
+    height: 120px; /* Reduce height on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-image {
+    height: 100px; /* Further reduce height for mobile screens */
+  }
+}
+
+/*Overall*/
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 0 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Capstone1\\WishlistService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|c:\\capstone1\\wishlistservice\\wishlistservice\\repository\\wishlistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|solutionrelative:wishlistservice\\repository\\wishlistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|c:\\capstone1\\wishlistservice\\wishlistservice\\models\\wishlistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|solutionrelative:wishlistservice\\models\\wishlistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|c:\\capstone1\\wishlistservice\\wishlistservice\\controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|solutionrelative:wishlistservice\\controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|c:\\capstone1\\wishlistservice\\wishlistservice\\service\\wishlistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|solutionrelative:wishlistservice\\service\\wishlistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|c:\\capstone1\\wishlistservice\\wishlistservice\\service\\iwishlistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|solutionrelative:wishlistservice\\service\\iwishlistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|c:\\capstone1\\wishlistservice\\wishlistservice\\repository\\iwishlistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|solutionrelative:wishlistservice\\repository\\iwishlistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|c:\\capstone1\\wishlistservice\\wishlistservice\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|solutionrelative:wishlistservice\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|c:\\capstone1\\wishlistservice\\wishlistservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|solutionrelative:wishlistservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|c:\\capstone1\\wishlistservice\\wishlistservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A316F7D4-45B1-4CBD-AAD5-BE8E804ECB3A}|WishlistService\\WishlistService.csproj|solutionrelative:wishlistservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WishlistRepository.cs",
+              "DocumentMoniker": "C:\\Capstone1\\WishlistService\\WishlistService\\Repository\\WishlistRepository.cs",
+              "RelativeDocumentMoniker": "WishlistService\\Repository\\WishlistRepository.cs",
+              "ToolTip": "C:\\Capstone1\\WishlistService\\WishlistService\\Repository\\WishlistRepository.cs",
+              "RelativeToolTip": "WishlistService\\Repository\\WishlistRepository.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwBAAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T05:31:03.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IWishlistService.cs",
+              "DocumentMoniker": "C:\\Capstone1\\WishlistService\\WishlistService\\Service\\IWishlistService.cs",
+              "RelativeDocumentMoniker": "WishlistService\\Service\\IWishlistService.cs",
+              "ToolTip": "C:\\Capstone1\\WishlistService\\WishlistService\\Service\\IWishlistService.cs",
+              "RelativeToolTip": "WishlistService\\Service\\IWishlistService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T05:37:50.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Wishlistservice.cs",
+              "DocumentMoniker": "C:\\Capstone1\\WishlistService\\WishlistService\\Service\\Wishlistservice.cs",
+              "RelativeDocumentMoniker": "WishlistService\\Service\\Wishlistservice.cs",
+              "ToolTip": "C:\\Capstone1\\WishlistService\\WishlistService\\Service\\Wishlistservice.cs",
+              "RelativeToolTip": "WishlistService\\Service\\Wishlistservice.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T05:37:11.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WishlistController.cs",
+              "DocumentMoniker": "C:\\Capstone1\\WishlistService\\WishlistService\\Controllers\\WishlistController.cs",
+              "RelativeDocumentMoniker": "WishlistService\\Controllers\\WishlistController.cs",
+              "ToolTip": "C:\\Capstone1\\WishlistService\\WishlistService\\Controllers\\WishlistController.cs",
+              "RelativeToolTip": "WishlistService\\Controllers\\WishlistController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T05:41:43.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WishlistItem.cs",
+              "DocumentMoniker": "C:\\Capstone1\\WishlistService\\WishlistService\\Models\\WishlistItem.cs",
+              "RelativeDocumentMoniker": "WishlistService\\Models\\WishlistItem.cs",
+              "ToolTip": "C:\\Capstone1\\WishlistService\\WishlistService\\Models\\WishlistItem.cs",
+              "RelativeToolTip": "WishlistService\\Models\\WishlistItem.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T05:24:12.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IWishlistRepository.cs",
+              "DocumentMoniker": "C:\\Capstone1\\WishlistService\\WishlistService\\Repository\\IWishlistRepository.cs",
+              "RelativeDocumentMoniker": "WishlistService\\Repository\\IWishlistRepository.cs",
+              "ToolTip": "C:\\Capstone1\\WishlistService\\WishlistService\\Repository\\IWishlistRepository.cs",
+              "RelativeToolTip": "WishlistService\\Repository\\IWishlistRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T05:28:22.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Capstone1\\WishlistService\\WishlistService\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "WishlistService\\Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Capstone1\\WishlistService\\WishlistService\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "WishlistService\\Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T05:25:51.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Capstone1\\WishlistService\\WishlistService\\appsettings.json",
+              "RelativeDocumentMoniker": "WishlistService\\appsettings.json",
+              "ToolTip": "C:\\Capstone1\\WishlistService\\WishlistService\\appsettings.json",
+              "RelativeToolTip": "WishlistService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwAkAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-02T05:50:43.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Capstone1\\WishlistService\\WishlistService\\Program.cs",
+              "RelativeDocumentMoniker": "WishlistService\\Program.cs",
+              "ToolTip": "C:\\Capstone1\\WishlistService\\WishlistService\\Program.cs",
+              "RelativeToolTip": "WishlistService\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA4AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T05:45:28.483Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

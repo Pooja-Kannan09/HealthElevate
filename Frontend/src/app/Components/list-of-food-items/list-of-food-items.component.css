@@ -1,0 +1,230 @@
+/* General Layout */
+.custom-toolbar {
+  background: linear-gradient(45deg, #4caf50, #81c784); /* Gradient background */
+  color: white;
+  height: 64px; /* Standard height for toolbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Padding for better spacing */
+  position: fixed; /* Make toolbar fixed to the top */
+  top: 0; /* Align to the top of the viewport */
+  width: 100%; /* Ensure full width */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.toolbar-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.container {
+  padding: 80px 20px; /* Added top padding to accommodate the fixed toolbar */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start */
+  position: relative;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  background: linear-gradient(45deg, #4caf50, #81c784);
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+/* Search Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+ 
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  height: 20px;
+  margin-top: 20px;
+}
+ 
+.search-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+ 
+.search-button mat-icon {
+  margin: 0;
+  font-size: 18px;
+  height: 20px;
+}
+ 
+.search-button:hover {
+  background-color: #388e3c;
+}
+
+/* Background Image */
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Behind other content */
+  opacity: 0.4; /* Transparency for background image */
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fills the container */
+}
+
+/* Grid Layout for Food Cards */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Set 3 columns for each page */
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Meal Card Styling */
+.meal-card {
+  background: #8dbb8e;
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  border: 1px solid rgba(48, 187, 141, 0.5);
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #000; /* Ensure text is visible */
+  max-width: 100%; /* Ensure it doesn’t overflow */
+  overflow: hidden; /* Prevent overflow of card content */
+}
+
+.meal-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Mat Card Header Style */
+.card-title-container {
+  background: linear-gradient(45deg, #4caf50, #81c784);
+  width: 300px; /* Make it stretch the full width */
+  padding: 10px; /* Add some padding for better appearance */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width */
+  color: white;
+}
+
+/* Title Styling */
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  overflow: hidden; /* Hide overflow for title */
+  text-overflow: ellipsis; /* Show ellipsis for overflow text */
+  white-space: nowrap; /* Prevent wrapping */
+  color: white;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  
+}
+
+/* Image Styling */
+.image-card {
+  width: 300px; /* Full width to maintain responsiveness */
+  height: 150px; /* Adjusted height for better layout */
+  object-fit: cover; /* Ensure the image fills the container */
+  border-radius: 0px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; /* Ensure no overflow */
+}
+
+/* Button Styling */
+.large-button {
+  background: linear-gradient(45deg, #81c784, #388e3c);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.large-button:hover {
+  background: linear-gradient(45deg, #388e3c, #81c784);
+  transform: translateY(-2px);
+}
+
+/* Button Styling for Mat Card Actions */
+.mat-card-actions button {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.mat-card-actions button:hover {
+  background-color: #388e3c;
+}
+
+/* Pagination Styling */
+.mat-paginator {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .custom-toolbar {
+    flex-direction: column; /* Stack elements vertically if needed */
+    align-items: flex-start; /* Align items to start */
+}
+
+.toolbar-title {
+    font-size: 20px; /* Adjust title size for smaller screens */
+}
+
+.dashboard-button {
+    font-size: 14px; /* Adjust button size for smaller screens */
+}
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .meal-card {
+    padding: 10px; /* Reduced padding for smaller screens */
+  }
+
+  .card-title-container {
+    white-space: normal; /* Allow wrapping on smaller screens */
+  }
+
+  .card-title {
+    white-space: normal; /* Allow wrapping on smaller screens */
+  }
+}

@@ -1,0 +1,64 @@
+<mat-toolbar class="custom-toolbar">
+  <span class="toolbar-title">Health Elevate</span>
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" placeholder="Search..." class="search-input" (input)="onSearch($event)">
+    <button class="search-button" aria-label="Search">
+      <mat-icon>search</mat-icon>
+    </button>
+  </div>
+  <span class="spacer"></span>
+  <nav>
+    <button (click)="onclickdash()" class="large-button">Dashboard</button>
+  </nav>
+</mat-toolbar>
+
+<div class="container">
+  <h1>List of Food Items</h1>
+  
+  <!-- Spinner while loading -->
+  <div class="spinner-container" *ngIf="!meals.length">
+    <mat-spinner diameter="20"></mat-spinner>
+  </div>
+
+  <!-- Background Image -->
+  <div class="background-container">
+    <img src="https://t3.ftcdn.net/jpg/02/80/10/24/360_F_280102415_eQ4cQVzSkvklQgYyLJhRUei9UWiccKa7.jpg" alt="List of Foods" class="background-image">
+  </div>
+
+  <!-- Grid Layout for Food Cards -->
+  <div class="grid-container">
+    <div *ngFor="let meal of paginatedMeals" class="meal-card" (mouseenter)="hoverItem = meal" (mouseleave)="hoverItem = null">
+      
+      <mat-card>
+        <!-- Meal Name and Image -->
+        <mat-card-header>
+          <mat-card-title class="card-title-container">{{ meal.name }}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="meal.image" alt="{{ meal.name }}" class="image-card">
+
+        <!-- Show Nutrition Info only when hovering over a meal -->
+        <mat-card-content *ngIf="hoverItem === meal">
+          <p>Calories: {{ meal.caloric }}</p>
+          <p>Fat: {{ meal.fat }}g</p>
+          <p>Carbs: {{ meal.carbon }}g</p>
+          <p>Protein: {{ meal.protein }}g</p>
+        </mat-card-content>
+        
+        <!-- Add to Favorites button -->
+        <mat-card-actions>
+          <button mat-button (click)="addToWishlist(meal)">Add to Favorites</button>
+        </mat-card-actions>
+      </mat-card>
+
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <mat-paginator
+    [length]="meals.length"
+    [pageSize]="pageSize"
+    [pageSizeOptions]="[6, 12, 18]"
+    (page)="onPageChange($event)">
+  </mat-paginator>
+</div>

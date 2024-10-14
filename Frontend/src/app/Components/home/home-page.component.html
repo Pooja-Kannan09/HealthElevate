@@ -1,0 +1,85 @@
+<mat-toolbar class="custom-toolbar">
+  <span class="toolbar-title">Health Elevate</span>
+  <span class="spacer"></span>
+  <nav>
+    <button (click)="navigateToLogin()" class="btn">LogIn</button>
+  </nav>
+</mat-toolbar>
+
+<div class="home-container">
+  <div class="hero-section">
+    <h1>Welcome to Health Elevate!</h1>
+    <p>Your journey to better nutrition starts here.</p>
+    <button class="large-button" (click)="navigateToRegister()">Register</button>
+  </div>
+
+  <div class="search-section-wrapper">
+    <!-- Search for Activity -->
+    <div class="search-section">
+      <h3 class="search-title">Find Activities to Track Calories</h3>
+      <mat-form-field appearance="outline">
+        <mat-label>Search for an Activity</mat-label>
+        <input matInput [(ngModel)]="searchQuery" placeholder="Enter activity name" />
+      </mat-form-field>
+      <button (click)="searchActivity()" class="large-button">Search</button>
+    </div>
+
+    <!-- Search for Nutrients -->
+    <div class="search-section">
+      <h3 class="search-title">Get Nutrient Information</h3>
+      <mat-form-field appearance="outline">
+        <mat-label>Enter food description</mat-label>
+        <input matInput [(ngModel)]="foodQuery" placeholder="e.g., 2 eggs, 1 slice of bread" />
+      </mat-form-field>
+      <button (click)="searchNutrients()" class="large-button">Get Nutrients</button>
+    </div>
+  </div>
+
+  <!-- Clear Button (Visible after a search is performed) -->
+  <div class="clear-button-wrapper" *ngIf="searchPerformed">
+    <button (click)="clearAll()" class="large-button clear-button">Clear</button>
+  </div>
+
+  <!-- Preloader -->
+  <div *ngIf="isLoading" class="loader"></div>
+
+  <!-- Results Section for Activities -->
+  <div *ngIf="activities.length > 0" class="results-container">
+    <mat-card *ngFor="let activity of activities" class="result-card" @fadeIn>
+      <mat-card-header>
+        <mat-card-title>{{ activity.name }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Calories Burned: {{ activity.calories_per_hour }} per hour</p>
+        <p>Duration: {{ activity.duration_minutes }} minutes</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <!-- "No activities found" Message -->
+  <p *ngIf="!isLoading && activitySearchPerformed && activities.length === 0">No activities found.</p>
+
+  <!-- Nutrient Results Section -->
+  <div *ngIf="nutrientInfo.length > 0" class="results-container">
+    <mat-card *ngFor="let food of nutrientInfo" class="result-card" @fadeIn>
+      <mat-card-header>
+        <mat-card-title>{{ food.food_name }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Calories: {{ food.nf_calories }} kcal</p>
+        <p>Fat: {{ food.nf_total_fat }} g</p>
+        <p>Carbohydrates: {{ food.nf_total_carbohydrate }} g</p>
+        <p>Protein: {{ food.nf_protein }} g</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <!-- "No nutrient information found" Message -->
+  <p *ngIf="!isLoading && nutrientSearchPerformed && nutrientInfo.length === 0">No nutrient information found.</p>
+</div>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <p>© 2024 Health Elevate. All rights reserved.</p>
+  <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>

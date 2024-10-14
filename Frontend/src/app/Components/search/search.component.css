@@ -1,0 +1,116 @@
+.custom-toolbar {
+  background: linear-gradient(45deg, #4caf50, #81c784); /* Gradient background */
+  color: white;
+  height: 64px; /* Standard height for toolbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolbar-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.search-background {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.search-container {
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(48, 187, 141, 0.562);
+  z-index: 1;
+  position: relative;
+}
+
+/* Card header with full width gradient */
+.card-header {
+  background: linear-gradient(90deg, #81c784, #388e3c);
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 2;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 20px;
+  padding: 10px;
+  color: white
+}
+
+/* Push the content below the header */
+.search-container {
+  padding-top: 90px; /* Add space to avoid overlap with the header */
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  color: black
+}
+
+/* Button Styling */
+.large-button {
+  background: linear-gradient(45deg, #81c784, #388e3c);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.large-button:hover {
+  background: linear-gradient(45deg, #388e3c, #81c784);
+  transform: translateY(-2px);
+}
+
+.nutrition-results {
+  margin-top: 20px;
+  color: black
+}
+
+.preloader {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: 10px; /* Space above the spinner */
+  margin-bottom: 20px; /* Optional: Space below the spinner */
+  z-index: 10; /* Ensure it's above other elements */
+}
+
+.spinner {
+  color: linear-gradient(45deg, #81c784, #388e3c); /* Optional: Change spinner color */
+}
